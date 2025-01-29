@@ -1,0 +1,12 @@
+Spring Framework 6 & Spring Boot 3 desde cero a experto
+
+Interceptores HTTP, Horario de acceso a clientes
+
+
+Interceptor horario de acceso: Creando el controlador
+
+Creando interceptor horario
+10:40
+Implementando cerrado en el interceptor
+06:25
+Registrando interceptor
