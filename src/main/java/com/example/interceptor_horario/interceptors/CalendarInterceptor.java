@@ -33,10 +33,10 @@ public class CalendarInterceptor implements HandlerInterceptor {
             message.append("Bienvenidos al horario de atención al cliente");
             message.append(", atendemos desde las ");
             message.append(open);
-            message.append("hrs.");
-            message.append(" Hasta las ");
+            message.append("hrs. ");
+            message.append("Hasta las ");
             message.append(close);
-            message.append("hrs.");
+            message.append("hrs. ");
             message.append("Gracias por su visita");
             request.setAttribute("message", message.toString());
             System.out.println(message.toString());
@@ -50,12 +50,12 @@ public class CalendarInterceptor implements HandlerInterceptor {
         message.append(", por favor visitenos desde las ");
         message.append(open);
         message.append("hrs.");
-        message.append(" y las ");
+        message.append(" hasta las ");
         message.append(close);
-        message.append("hrs.");
+        message.append("hrs. ");
         message.append("Gracias");
         data.put("message", message.toString());
-        data.put("date", new Date());
+        data.put("date", new Date().toString());
 
         // Devuelve un response porque no pasa al controlador
         response.setContentType("application/json");
